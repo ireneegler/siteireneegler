@@ -17,15 +17,16 @@ namespace SiteIreneEgler.Controllers
 
         public IActionResult About()
         {
-            ViewData["Title"] = "Teste de site de vendas";
+            ViewData["Title"] = "Sobre";
             ViewData["Message"] = "Mensagem teste";
+            ViewData["Mail"] = "teste@teste.com";
 
             return View();
         }
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Página de contato.";
 
             return View();
         }
