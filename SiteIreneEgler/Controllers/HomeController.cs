@@ -17,7 +17,8 @@ namespace SiteIreneEgler.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Title"] = "Teste de site de vendas";
+            ViewData["Message"] = "Mensagem teste";
 
             return View();
         }
