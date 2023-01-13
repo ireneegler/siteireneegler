@@ -1,12 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SiteIreneEgler.Models;
+using SiteIreneEgler.Models.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SiteIreneEgler.Controllers
+namespace SiteIreneEgler.Controllers.ViewModels
 {
     public class HomeController : Controller
     {
