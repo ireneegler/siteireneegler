@@ -1,4 +1,5 @@
 using System;
+using SiteIreneEgler.Models.ViewModels;
 
 namespace SiteIreneEgler.Models.ViewModels
 {
