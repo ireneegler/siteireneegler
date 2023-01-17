@@ -14,6 +14,8 @@ namespace SiteIreneEgler.Data
         {
         }
 
-        public DbSet<SiteIreneEgler.Models.Departament> Departament { get; set; }
+        public DbSet<Departament> Departament { get; set; }
+        public DbSet<Seller> Seller { get; set; }
+        public DbSet<SalesRecord> SalesRecords { get; set; }
     }
 }

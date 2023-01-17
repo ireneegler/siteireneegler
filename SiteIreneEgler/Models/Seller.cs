@@ -34,5 +34,17 @@ namespace SiteIreneEgler.Models
         {
             Sales.Add(sr);
         }
+
+        public void RemoveSales(SalesRecord sr)
+        {
+            Sales.Remove(sr);
+        }
+
+        public double TotalSales(DateTime initial, DateTime final)
+        {
+            return Sales.Where(sr => sr.Date
+            >= initial && sr.Date <= final).Sum(
+               sr => sr.Amount);
+        }
     }
 }
