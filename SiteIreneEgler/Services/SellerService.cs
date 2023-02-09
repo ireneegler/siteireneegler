@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using SiteIreneEgler.Data;
 using SiteIreneEgler.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace SiteIreneEgler.Services
 {
@@ -27,7 +28,7 @@ namespace SiteIreneEgler.Services
 
         public Seller FindById(int id)
         {
-            return _context.Seller.FirstOrDefault(obj => obj.Id == id);
+            return _context.Seller.Include(obj => obj.Departament).FirstOrDefault(obj => obj.Id == id);
         }
         public void Remove(int id)
         {
