@@ -24,8 +24,8 @@ namespace SiteIreneEgler.Controllers
         }
         public async Task<IActionResult> SimpleSearch(DateTime? minDate, DateTime? maxDate)
         {
-            var result = _salesRecordService.FindByDateAsync(minDate, maxDate);
-            return View();
+            var result = await _salesRecordService.FindByDateAsync(minDate, maxDate);
+            return View(result);
         }
         public IActionResult GroupingSearch()
         {
